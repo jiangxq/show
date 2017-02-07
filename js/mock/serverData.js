@@ -4,12 +4,11 @@
     "use strict";
 
     $.mockjax({
-        url: "mock_url",
+        url: /mockurl/,
         data: {
-            action: 'get_knowledge_tree',
+            action: 'get_force',
         },
-        status: 200,
-        responseTime: 100,
+        responseTime: 1000,
 
         responseText: {
             'status': true,
