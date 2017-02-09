@@ -3,10 +3,11 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>training!</title>
+        <title>Works show!</title>
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="index.min.css" />
+        <link rel="stylesheet" href="js/reader/css/all.min.css" />
 
         <script src="js/libs/jquery-1.9.1.js"></script>
         <script src="js/libs/jquery.mockjax.min.js"></script>
@@ -19,8 +20,18 @@
 
     <body>
         <div id="mainPage" style="position:absolute; top:0;left:0; width:100%; height:100%; background-color:lightgray"></div>
-
+        <div class="explain">
+            <h1>介绍</h1>
+            <h3>echarts</h3>
+            <p>用echarts3.0简单实现了一个引力图谱，可以单击节点显示节点最近的五层连接关系的所有节点。</p>
+            <h3>readerPC</h3>
+            <p>类似QQ阅读器的PC版阅读器，实现了分页、横板竖版、字体调整、书签、目录跳转等。</p>
+            <h3>readerPhone</h3>
+            <p>类似QQ阅读器的Phone版阅读器，实现了分页、横板竖版、字体调整、书签、目录跳转等。</p>
+        </div>
+        <script src="js/reader/all.min.js" ></script>
         <script src="build/test.min.js"></script>
+
         <script>
             var testOne = new Test({
                 domWrapId: "#mainPage",
